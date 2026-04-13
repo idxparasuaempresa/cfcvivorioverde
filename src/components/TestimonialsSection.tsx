@@ -2,9 +2,9 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   { text: "Fiz minhas aulas com eles e amei! Consegui passar de primeira na prova pratica. As aulas foram excelentes meu instrutor conseguiu me ensinar tudo muito bem sendo que quando comecei eu nunca tinha dirigido na vida. A autosescola da Vivo também merece parabéns pela agilidade são muito eficazes", name: "Fernanda Balbino" },
-  { text: "Autoescola Top de verdade ! Muito organizada, equipe de atendimento nota 1000 - agilidade - carros novos - instrutores que além de profissionais se tornam amigos ! Só elogios e gratidão por ter tido a oportunidade de passar por aqui. Pode vim que aqui você vai ser muito bem recebido e ter tudo resolvido.", name: "Giovanna Martins" },
-  { text: "Desde o primeiro atendimento até a finalização do processo, fui muito bem acolhida e orientada por toda a equipe.", name: "Aluna da Auto Escola Vivo" },
-  { text: "Me senti segura desde o primeiro contato. Isso fez toda a diferença pra mim.", name: "Aluna da Auto Escola Vivo" },
+  { text: "C.F.C VIVO top top top top, excelente qualidade magnífica, estou sem palavras pra expressar o quanto eu estou satisfeito com a minha aprendizagem com a C.F.C VIVO.", name: "Gleison Martins" },
+  { text: "Melhor auto escola de rio verde estão sempre ajudando em questão de horários para quem é corrido como eu, e sempre preocupados para finalizar seu processo. Todos os instrutores foram 10 comigo super recomendo!!!", name: "Antonio Neto" },
+  { text: "Auto escola vivo maravilhosa, super indico. Me apoiaram deis do inicio, meu instrutor e minha instrutora foram maravilhosos me deu todas as dicas possíveis, estiveram comigo no dia da prova me apoiando e torcendo por mim e pelos outros alunos. Parabéns a auto escola vivo por serem tão dedicados. 💛", name: "Gabriela Lima" },
 ];
 
 export const TestimonialsSection = () => (
