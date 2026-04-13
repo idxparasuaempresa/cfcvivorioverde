@@ -1,16 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroSection } from "@/components/HeroSection";
+import { PainPointsSection } from "@/components/PainPointsSection";
+import { DifferentialsSection } from "@/components/DifferentialsSection";
+import { WhyChooseSection } from "@/components/WhyChooseSection";
+import { ServicesSection } from "@/components/ServicesSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { AuthoritySection } from "@/components/AuthoritySection";
+import { FaqSection } from "@/components/FaqSection";
+import { FinalCtaSection } from "@/components/FinalCtaSection";
+import { FloatingWhatsApp } from "@/components/WhatsAppButton";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
-  );
-};
-
-const Index = PlaceholderIndex;
+const Index = () => (
+  <>
+    <HeroSection />
+    <PainPointsSection />
+    <DifferentialsSection />
+    <WhyChooseSection />
+    <ServicesSection />
+    <TestimonialsSection />
+    <AuthoritySection />
+    <FaqSection />
+    <FinalCtaSection />
+    <footer className="bg-foreground py-6 text-center text-sm text-background/60">
+      © {new Date().getFullYear()} Auto Escola Vivo — Rio Verde, GO. Todos os direitos reservados.
+    </footer>
+    <FloatingWhatsApp />
+  </>
+);
 
 export default Index;
