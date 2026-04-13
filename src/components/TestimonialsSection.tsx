@@ -1,9 +1,9 @@
 import { Quote } from "lucide-react";
 
 const testimonials = [
-  { text: "Excelente atendimento do começo ao fim. Me senti acolhida e bem orientada.", name: "Aluna da Auto Escola Vivo" },
-  { text: "Fui muito bem orientada em cada etapa. O processo foi mais tranquilo do que eu imaginava.", name: "Aluna da Auto Escola Vivo" },
-  { text: "Equipe atenciosa e processo bem organizado. Recomendo de olhos fechados!", name: "Aluno da Auto Escola Vivo" },
+  { text: "Fiz minhas aulas com eles e amei! Consegui passar de primeira na prova pratica. As aulas foram excelentes meu instrutor conseguiu me ensinar tudo muito bem sendo que quando comecei eu nunca tinha dirigido na vida. A autosescola da Vivo também merece parabéns pela agilidade são muito eficazes", name: "Fernanda Balbino" },
+  { text: "Autoescola Top de verdade ! Muito organizada, equipe de atendimento nota 1000 - agilidade - carros novos - instrutores que além de profissionais se tornam amigos ! Só elogios e gratidão por ter tido a oportunidade de passar por aqui. Pode vim que aqui você vai ser muito bem recebido e ter tudo resolvido.", name: "Giovanna Martins" },
+  { text: "Desde o primeiro atendimento até a finalização do processo, fui muito bem acolhida e orientada por toda a equipe.", name: "Aluna da Auto Escola Vivo" },
   { text: "Me senti segura desde o primeiro contato. Isso fez toda a diferença pra mim.", name: "Aluna da Auto Escola Vivo" },
 ];
 
