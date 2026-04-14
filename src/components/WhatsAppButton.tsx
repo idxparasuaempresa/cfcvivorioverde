@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const WA_LINK = "https://wa.me/5564992042266";
 
@@ -24,7 +24,7 @@ export const WhatsAppButton = ({
         size === "lg" ? "px-8 py-4 text-lg" : "px-6 py-3.5 text-base"
       } ${className}`}
     >
-      <MessageCircle className="h-5 w-5" />
+      <WhatsAppIcon className="h-5 w-5" />
       {text}
     </a>
     {micro && (
@@ -43,6 +43,6 @@ export const FloatingWhatsApp = () => (
     aria-label="Falar no WhatsApp"
     className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lg animate-pulse-glow transition-transform hover:scale-110 active:scale-95 md:bottom-8 md:right-8"
   >
-    <MessageCircle className="h-7 w-7" />
+    <WhatsAppIcon className="h-7 w-7" />
   </a>
 );

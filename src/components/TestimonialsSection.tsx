@@ -1,4 +1,5 @@
 import { Quote, Star } from "lucide-react";
+import { WhatsAppButton } from "./WhatsAppButton";
 
 const testimonials = [
   { text: "Fiz minhas aulas com eles e amei! Consegui passar de primeira na prova pratica. As aulas foram excelentes meu instrutor conseguiu me ensinar tudo muito bem sendo que quando comecei eu nunca tinha dirigido na vida. A autosescola da Vivo também merece parabéns pela agilidade são muito eficazes", name: "Fernanda Balbino" },
@@ -35,6 +36,9 @@ export const TestimonialsSection = () => (
             </div>
           </div>
         ))}
+      </div>
+      <div className="mt-10 text-center">
+        <WhatsAppButton text="Quero minha CNH" />
       </div>
     </div>
   </section>
