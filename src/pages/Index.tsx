@@ -20,9 +20,8 @@ const Index = () => (
     <AuthoritySection />
     <FaqSection />
     <FinalCtaSection />
-    <footer className="bg-foreground py-6 text-center text-sm text-background/60 space-y-1">
+    <footer className="bg-foreground py-6 text-center text-sm text-background/60">
       <p>© {new Date().getFullYear()} C.F.C — Rio Verde, GO.</p>
-      <p>R. Augusta Bastos, 1894 - Jardim Goias, Rio Verde - GO, 75903-370</p>
     </footer>
     <FloatingWhatsApp />
   </>
