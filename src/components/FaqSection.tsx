@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -5,7 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
+const faqs: { q: string; a: React.ReactNode }[] = [
   {
     q: "Como funciona o processo para tirar a CNH?",
     a: "O processo inclui exame médico, aulas teóricas, prova teórica, aulas práticas e exame prático. Na Auto Escola Vivo, orientamos você em cada etapa. Fale com a gente no WhatsApp para saber mais.",
