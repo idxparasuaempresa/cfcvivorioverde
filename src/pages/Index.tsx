@@ -20,8 +20,9 @@ const Index = () => (
     <AuthoritySection />
     <FaqSection />
     <FinalCtaSection />
-    <footer className="bg-foreground py-6 text-center text-sm text-background/60">
-      © {new Date().getFullYear()} Auto Escola Vivo — Rio Verde, GO. Todos os direitos reservados.
+    <footer className="bg-foreground py-6 text-center text-sm text-background/60 space-y-1">
+      <p>© {new Date().getFullYear()} C.F.C — Rio Verde, GO.</p>
+      <p>R. Augusta Bastos, 1894 - Jardim Goias, Rio Verde - GO, 75903-370</p>
     </footer>
     <FloatingWhatsApp />
   </>
