@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "Onde fica a Auto Escola Vivo?",
-    a: "Estamos na R. Augusta Bastos, 1894 - Jardim Goias, Rio Verde - GO, 75903-370. Fale conosco pelo WhatsApp para horários de atendimento.",
+    a: (<>Estamos na <a href="https://maps.google.com/?q=R.+Augusta+Bastos,+1894+-+Jardim+Goias,+Rio+Verde+-+GO,+75903-370" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:brightness-110">R. Augusta Bastos, 1894 - Jardim Goias, Rio Verde - GO, 75903-370</a>. Fale conosco pelo WhatsApp para horários de atendimento.</>),
   },
   {
     q: "Como iniciar meu processo?",
