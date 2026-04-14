@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -5,7 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
+const faqs: { q: string; a: React.ReactNode }[] = [
   {
     q: "Como funciona o processo para tirar a CNH?",
     a: "O processo inclui exame médico, aulas teóricas, prova teórica, aulas práticas e exame prático. Na Auto Escola Vivo, orientamos você em cada etapa. Fale com a gente no WhatsApp para saber mais.",
@@ -24,7 +25,7 @@ const faqs = [
   },
   {
     q: "Onde fica a Auto Escola Vivo?",
-    a: "Estamos na R. Augusta Bastos, 1894 - Jardim Goias, Rio Verde - GO, 75903-370. Fale conosco pelo WhatsApp para horários de atendimento.",
+    a: (<>Estamos na <a href="https://maps.google.com/?q=R.+Augusta+Bastos,+1894+-+Jardim+Goias,+Rio+Verde+-+GO,+75903-370" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:brightness-110">R. Augusta Bastos, 1894 - Jardim Goias, Rio Verde - GO, 75903-370</a>. Fale conosco pelo WhatsApp para horários de atendimento.</>),
   },
   {
     q: "Como iniciar meu processo?",
