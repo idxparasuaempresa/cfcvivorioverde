@@ -1,3 +1,4 @@
+import { WhatsAppButton } from "./WhatsAppButton";
 import {
   Zap,
   HeartHandshake,
@@ -43,6 +44,9 @@ export const DifferentialsSection = () => (
             <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
           </div>
         ))}
+      </div>
+      <div className="mt-10 text-center">
+        <WhatsAppButton text="Tire suas dúvidas agora" />
       </div>
     </div>
   </section>
