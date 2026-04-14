@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "Onde fica a Auto Escola Vivo?",
-    a: "Estamos localizados em Rio Verde - GO. Fale conosco pelo WhatsApp para endereço completo e horários de atendimento.",
+    a: "Estamos na R. Augusta Bastos, 1894 - Jardim Goias, Rio Verde - GO, 75903-370. Fale conosco pelo WhatsApp para horários de atendimento.",
   },
   {
     q: "Como iniciar meu processo?",
