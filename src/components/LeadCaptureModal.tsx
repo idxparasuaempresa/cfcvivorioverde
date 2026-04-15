@@ -25,6 +25,15 @@ declare global {
   }
 }
 
+const openWhatsApp = (popup: Window | null) => {
+  if (popup) {
+    popup.location.href = WA_LINK;
+    return;
+  }
+
+  window.location.href = WA_LINK;
+};
+
 export const LeadCaptureModal = ({ open, onOpenChange }: LeadCaptureModalProps) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -33,6 +42,8 @@ export const LeadCaptureModal = ({ open, onOpenChange }: LeadCaptureModalProps) 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !phone.trim()) return;
+
+    const popup = window.open("", "_blank", "noopener,noreferrer");
 
     setSubmitting(true);
 
@@ -52,7 +63,7 @@ export const LeadCaptureModal = ({ open, onOpenChange }: LeadCaptureModalProps) 
       setName("");
       setPhone("");
       onOpenChange(false);
-      window.open(WA_LINK, "_blank", "noopener,noreferrer");
+      openWhatsApp(popup);
     }, 300);
   };
 
