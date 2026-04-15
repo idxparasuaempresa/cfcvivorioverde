@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const WA_LINK =
-  "https://wa.me/556492042266?text=Ol%C3%A1,%20tenho%20interesse%20em%20organizar%20minha%20CNH,%20vim%20do%20Google1";
+  "https://wa.me/5564992042266?text=Ol%C3%A1,%20Tenho%20interesse%20na%20CNH,%20vim%20do%20Google!";
 
 interface LeadCaptureModalProps {
   open: boolean;
@@ -25,12 +25,11 @@ declare global {
   }
 }
 
-const openWhatsApp = (popup: Window | null) => {
-  if (popup) {
-    popup.location.href = WA_LINK;
-    return;
-  }
+const openWhatsApp = () => {
+  const popup = window.open(WA_LINK, "_blank", "noopener,noreferrer");
+  if (popup) return;
 
+  // Fallback when the browser blocks opening a new tab.
   window.location.href = WA_LINK;
 };
 
@@ -42,8 +41,6 @@ export const LeadCaptureModal = ({ open, onOpenChange }: LeadCaptureModalProps) 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !phone.trim()) return;
-
-    const popup = window.open("", "_blank", "noopener,noreferrer");
 
     setSubmitting(true);
 
@@ -57,14 +54,11 @@ export const LeadCaptureModal = ({ open, onOpenChange }: LeadCaptureModalProps) 
       lead_timestamp: new Date().toISOString(),
     });
 
-    // Small delay to ensure dataLayer push is processed
-    setTimeout(() => {
-      setSubmitting(false);
-      setName("");
-      setPhone("");
-      onOpenChange(false);
-      openWhatsApp(popup);
-    }, 300);
+    openWhatsApp();
+    setSubmitting(false);
+    setName("");
+    setPhone("");
+    onOpenChange(false);
   };
 
   return (
