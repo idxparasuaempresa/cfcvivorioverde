@@ -26,6 +26,8 @@ export const HeroSection = () => (
       <div className="mt-8">
         <WhatsAppButton
           size="lg"
+          trackingId="hero-whatsapp-button"
+          trackingLabel="Hero WhatsApp"
           micro="Atendimento rápido para tirar dúvidas, consultar valores e iniciar seu processo."
         />
       </div>

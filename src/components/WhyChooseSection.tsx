@@ -29,7 +29,11 @@ export const WhyChooseSection = () => (
         ))}
       </ul>
       <div className="mt-10 text-center">
-        <WhatsAppButton text="Agendar atendimento" />
+        <WhatsAppButton
+          text="Agendar atendimento"
+          trackingId="why-choose-whatsapp-button"
+          trackingLabel="Agendar atendimento"
+        />
       </div>
     </div>
   </section>

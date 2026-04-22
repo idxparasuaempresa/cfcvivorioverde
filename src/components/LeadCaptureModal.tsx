@@ -101,8 +101,13 @@ export const LeadCaptureModal = ({ open, onOpenChange }: LeadCaptureModalProps) 
           </div>
 
           <Button
+            id="lead-capture-whatsapp-submit"
             type="submit"
             disabled={submitting || !name.trim() || !phone.trim()}
+            data-gtm="whatsapp-lead-submit"
+            data-gtm-id="lead-capture-whatsapp-submit"
+            data-gtm-text="Continuar para o WhatsApp"
+            data-testid="lead-capture-whatsapp-submit"
             className="w-full gap-2 bg-whatsapp text-whatsapp-foreground hover:brightness-110"
             size="lg"
           >

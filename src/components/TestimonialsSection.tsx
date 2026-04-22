@@ -38,7 +38,11 @@ export const TestimonialsSection = () => (
         ))}
       </div>
       <div className="mt-10 text-center">
-        <WhatsAppButton text="Quero minha CNH" />
+        <WhatsAppButton
+          text="Quero minha CNH"
+          trackingId="testimonials-whatsapp-button"
+          trackingLabel="Quero minha CNH"
+        />
       </div>
     </div>
   </section>
