@@ -46,7 +46,11 @@ export const DifferentialsSection = () => (
         ))}
       </div>
       <div className="mt-10 text-center">
-        <WhatsAppButton text="Tire suas dúvidas agora" />
+        <WhatsAppButton
+          text="Tire suas dúvidas agora"
+          trackingId="differentials-whatsapp-button"
+          trackingLabel="Tire suas dúvidas agora"
+        />
       </div>
     </div>
   </section>

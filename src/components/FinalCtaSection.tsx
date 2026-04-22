@@ -14,6 +14,8 @@ export const FinalCtaSection = () => (
         <WhatsAppButton
           text="Chamar no WhatsApp"
           size="lg"
+          trackingId="final-cta-whatsapp-button"
+          trackingLabel="Chamar no WhatsApp"
           className="animate-pulse-glow"
         />
       </div>
