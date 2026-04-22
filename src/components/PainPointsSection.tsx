@@ -29,7 +29,7 @@ export const PainPointsSection = () => (
       <div className="mt-10">
         <WhatsAppButton
           text="Quero meu orçamento"
-          trackingId="pain-points-whatsapp-button"
+          trackingId="botão-whatsapp-pontos-de-dor"
           trackingLabel="Quero meu orçamento"
         />
       </div>

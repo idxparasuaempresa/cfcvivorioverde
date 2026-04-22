@@ -48,7 +48,7 @@ export const DifferentialsSection = () => (
       <div className="mt-10 text-center">
         <WhatsAppButton
           text="Tire suas dúvidas agora"
-          trackingId="differentials-whatsapp-button"
+          trackingId="diferenciais-botão-whatsapp"
           trackingLabel="Tire suas dúvidas agora"
         />
       </div>

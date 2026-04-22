@@ -60,17 +60,19 @@ export const WhatsAppButton = ({
 };
 
 export const FloatingWhatsApp = () => {
+  const floatingTrackingId = "botão-flutuante-do-whatsapp";
+
   return (
     <a
-      id="floating-whatsapp-button"
+      id={floatingTrackingId}
       href={WA_LINK}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"
       data-gtm="whatsapp-float"
-      data-gtm-id="floating-whatsapp-button"
+      data-gtm-id={floatingTrackingId}
       data-gtm-text="Falar no WhatsApp"
-      data-testid="floating-whatsapp-button"
+      data-testid={floatingTrackingId}
       title="Falar no WhatsApp"
       className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lg animate-pulse-glow transition-transform hover:scale-110 active:scale-95 md:bottom-8 md:right-8"
     >
