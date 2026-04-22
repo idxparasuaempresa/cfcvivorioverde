@@ -1,7 +1,6 @@
+import { useState } from "react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
-
-const WA_LINK =
-  "https://wa.me/5564992042266?text=Ol%C3%A1,%20Tenho%20interesse%20na%20CNH,%20vim%20do%20Google!";
+import { LeadCaptureModal } from "./LeadCaptureModal";
 
 const slugify = (value: string) =>
   value
@@ -30,14 +29,14 @@ export const WhatsAppButton = ({
 }: WhatsAppButtonProps) => {
   const resolvedTrackingId = trackingId ?? `whatsapp-${slugify(text)}`;
   const resolvedTrackingLabel = trackingLabel ?? text;
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <a
+      <button
+        type="button"
         id={resolvedTrackingId}
-        href={WA_LINK}
-        target="_blank"
-        rel="noopener noreferrer"
+        onClick={() => setOpen(true)}
         data-gtm="whatsapp-cta"
         data-gtm-id={resolvedTrackingId}
         data-gtm-text={resolvedTrackingLabel}
@@ -49,34 +48,38 @@ export const WhatsAppButton = ({
       >
         <WhatsAppIcon className="h-5 w-5" />
         {text}
-      </a>
+      </button>
       {micro && (
         <span className="text-sm text-muted-foreground max-w-xs text-center">
           {micro}
         </span>
       )}
+      <LeadCaptureModal open={open} onOpenChange={setOpen} />
     </div>
   );
 };
 
 export const FloatingWhatsApp = () => {
   const floatingTrackingId = "botão-flutuante-do-whatsapp";
+  const [open, setOpen] = useState(false);
 
   return (
-    <a
-      id={floatingTrackingId}
-      href={WA_LINK}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Falar no WhatsApp"
-      data-gtm="whatsapp-float"
-      data-gtm-id={floatingTrackingId}
-      data-gtm-text="Falar no WhatsApp"
-      data-testid={floatingTrackingId}
-      title="Falar no WhatsApp"
-      className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lg animate-pulse-glow transition-transform hover:scale-110 active:scale-95 md:bottom-8 md:right-8"
-    >
-      <WhatsAppIcon className="h-7 w-7" />
-    </a>
+    <>
+      <button
+        type="button"
+        id={floatingTrackingId}
+        onClick={() => setOpen(true)}
+        aria-label="Falar no WhatsApp"
+        data-gtm="whatsapp-float"
+        data-gtm-id={floatingTrackingId}
+        data-gtm-text="Falar no WhatsApp"
+        data-testid={floatingTrackingId}
+        title="Falar no WhatsApp"
+        className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lg animate-pulse-glow transition-transform hover:scale-110 active:scale-95 md:bottom-8 md:right-8"
+      >
+        <WhatsAppIcon className="h-7 w-7" />
+      </button>
+      <LeadCaptureModal open={open} onOpenChange={setOpen} />
+    </>
   );
 };
